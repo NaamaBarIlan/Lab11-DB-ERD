@@ -50,11 +50,13 @@ This is a C# project that builds out an API server for a Hotel Asset Management 
     Joint Entity Table with Payload: The table has additional data (PK and pets property) on top of the composite keys. 
 
 * **Amenities Table** 
+    
     Key(s): Primary Key
 
-    Description: Amenities are combinatorial meaning that they can be related to another table individually or as a combination. Amenities are tied directly to the layout of a room which makes the layout table’s primary key a necessary part of the rooms table.
+    Description: Amenities are combinatorial meaning that they can be related to another table individually or as a combination. Amenities are tied directly to the layout of a room which makes the layout tableâ€™s primary key a necessary part of the rooms table.
 
 * **Price Table** 
+    
     Key(s): RoomsID(CK), LocationID(CK)
 
     Description: Pricing is dependent on the location, room number, and layout (which is dependent on the amenities). This means that rooms will never share the same price in the same location, but a coincidental mixture of properties means that two prices could potentially be the same at different locations with other differing properties.
